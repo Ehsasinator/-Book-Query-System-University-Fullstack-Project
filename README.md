@@ -2,7 +2,7 @@
 
 This is a 3-tier, TCP-based, multi-threaded client-server application that allows users to query a PostgreSQL database for books by author and library location. The client features a JavaFX graphical interface, while the server processes client requests and retrieves data from the database via JDBC.
 
-Features
+## Features
 
 Client-Server Architecture: TCP-based communication between a JavaFX client and a multi-threaded server.
 JDBC Integration: Server connects to a PostgreSQL database using JDBC.
@@ -10,7 +10,8 @@ Parameterized Query: Queries books available from a given author in a specified 
 Multithreading: Server can handle multiple client requests simultaneously by spawning new service threads.
 SQL Injection Protection: The server uses prepared statements to prevent SQL injection attacks.
 Graceful Error Handling: Robust exception handling across all components ensures smooth execution or clean exit with appropriate error codes.
-Query Details
+
+## Query Details
 
 The server performs the following query:
 
@@ -22,7 +23,8 @@ Genre
 Recommended Retailer Price
 Number of Copies Available
 Books with 0 copies available are not listed.
-Components
+
+## Components
 
 Client: A JavaFX-based GUI allowing users to enter search parameters (author's last name and library city).
 Main Server: Listens for client requests, creates a new service provider thread for each request.
@@ -31,18 +33,20 @@ Database
 
 The application connects to a PostgreSQL database and uses the postgresql-42.6.0.jar driver.
 
-Exception Handling
+## Exception Handling
 
 Exceptions are handled locally at the point they occur.
 Program exits with code 1 on critical failures.
 Program exits with code 0 on successful execution.
-Requirements
+
+## Requirements
 
 PostgreSQL 12+ with the postgresql-42.6.0.jar driver.
 JavaFX for the client-side GUI.
 Multi-threading support for the server.
 Java 11+.
-Running the Application
+
+## Running the Application
 
 Set up a PostgreSQL database with the required schema.
 Compile and run the server from the command line.
