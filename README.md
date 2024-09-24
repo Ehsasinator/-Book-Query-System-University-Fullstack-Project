@@ -1,4 +1,4 @@
-#Book Query System
+# ** Book Query System
 
 This is a 3-tier, TCP-based, multi-threaded client-server application that allows users to query a PostgreSQL database for books by author and library location. The client features a JavaFX graphical interface, while the server processes client requests and retrieves data from the database via JDBC.
 
